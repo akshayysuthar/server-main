@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="head"></title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <style>
+        body {
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="#top">
+    <header class="header" data-header>
+        <div class="container">
+            <div class="overlay" data-overlay></div>
+            <a href="index.html" class="logo">
+                <h1 style="text-decoration: none; color: yellow;">Server</h1>
+            </a>
+            <div class="header-actions">
+                <button class="btn btn-primary">Sign in</button>
+            </div>
+            <button class="menu-open-btn" data-menu-open-btn>
+                <ion-icon name="reorder-two"></ion-icon>
+            </button>
+            <nav class="navbar" data-navbar>
+                <div class="navbar-top">
+                    <a href="./index.html" class="logo">
+                        <h1 style="text-decoration: none; color: yellow;">Server</h1>
+                    </a>
+                    <button class="menu-close-btn" data-menu-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="index.html" class="navbar-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link">Movie</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link">Web Series</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="movie-detail">
+        <div class="container">
+            <figure class="movie-detail-banner" id="image">
+            </figure>
+            <div class="movie-detail-content">
+                <p class="detail-subtitle" id="status">
+                    <!-- status shown here  -->
+                </p>
+                <h1 class="h1 detail-title" id="post-title">
+                    <!-- here show the title  -->
+                </h1>
+
+                <button class="btn-primary btn  btn-post" onclick="copyText()">Copy Post Content</button>
+                <div class="container m-5">
+                    <p class="storyline mt-5" id="post-content">
+                        <!-- the content shown here -->
+                    </p>
+                </div>
+                </p>
+            </div>
+
+            <form id="edit-form">
+                <label for="status" class="col-sm-2 col-form-label">Update it is posted or Not:</label>
+                <div class="col-sm-10">
+                    <select name="status" id="status">
+                        <option value="Not Posted">Not Posted</option>
+                        <option value="Posted">Posted</option>
+                    </select>
+                </div>
+                <button type="submit">Save</button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand-wrapper">
+                    <a href="./index.html" class="logo">
+                        <h1 style="text-decoration: none; color: yellow;">Server</h1>
+                    </a>
+                    <ul class="footer-list">
+                        <li>
+                            <a href="index.html" class="footer-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Movie</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">TV Show</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer-link">Web Series</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="divider"></div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <p class="copyright">
+                            &copy; 2023 <a href="index.html">Manja Industries</a>. All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+    </footer>
+
+    <a href="#top" class="go-top" data-go-top>
+        <ion-icon name="chevron-up"></ion-icon>
+    </a>
+
+    <script src="./js/firebase.js"></script>
+    <script src="./js/movie.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="text/javascript">           
+        var app_url = 'https://gplinks.in/';
+        var app_api_token = 'ee420dda44c78be1df2a3d81e727b56a586b6692';
+        var app_advert = 2;
+        var app_domains = ["akshayy.tk"];
+    </script>
+    <script src='//gplinks.in/js/full-page-script.js'></script>
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
